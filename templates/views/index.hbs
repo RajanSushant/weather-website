@@ -1,0 +1,63 @@
+<html lang="en">
+  <head>
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Source+Sans+Pro:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://f.v1.n0.cdn.getcloudapp.com/items/1J0Y1N1I441v1E2k3e2W/weather.png"
+      rel="icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/a538d6fa29.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div id="main-container">
+      <header>
+        <a href="/about">About</a>
+        <a href="/help">Help</a>
+        <form>
+          <div class="form-group">
+            <button class="submit-btn">
+              <i class="fas fa-search"></i>
+            </button>
+            <input type="text" placeholder="Search city" id="city_input" />
+            <br />
+            <span id="error-msg"></span>
+          </div>
+        </form>
+      </header>
+      <div class="main-weather-display info">
+        <div class="general-info">
+          <p id="condition"></p>
+          <h1 id="location"></h1>
+          <span id="degrees"></span>
+        </div>
+        <div class="weather-details info">
+          <p id="feels-like"></p>
+          <p id="wind-mph"></p>
+          <p id="humidity"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./js/app.js"></script>
+</html>
