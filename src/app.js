@@ -9,6 +9,7 @@ const viewsPath = path.join(__dirname, "../templates/views");
 const partialsPath = path.join(__dirname, "../templates/partials");
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Use static tempates
 app.use(express.static(path.join(__dirname, "../public")));
@@ -87,6 +88,6 @@ app.use((req, res) => {
   });
 });
 
-app.listen(3000, () => {
-  console.log("Server is up on port 3000");
+app.listen(port, () => {
+  console.log("Server is up on port " + port);
 });
